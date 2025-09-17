@@ -66,3 +66,65 @@ label {
     justify-content: center;
     align-items: center;
 }
+
+dialog {
+    border: 0;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 1px;
+    background-color:  #e1e8f0;
+}
+
+.dia-header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #1892d3;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dia-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dia-content label {
+    width: 50px;
+    text-align: end;
+}
+
+.dia-content input {
+    padding: 8px;
+    border-radius: 8px;
+    border: #1892d3 solid 1px;
+}
+.dia-content input:focus {
+    border-color: #facc15;
+    outline: none;
+}
+.dia-content input[type='checkbox']{
+    height: 20px;
+    width: 20px;
+}
+.dia-content div {
+    display: flex;
+    gap: 8px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    background-color: #1892d3;
+    padding: 8px 16px;
+    border: 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+}

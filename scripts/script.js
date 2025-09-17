@@ -38,7 +38,7 @@ const myLibrary = [
 const contentDiv = document.querySelector('.content')
 const addBtn = document.querySelector('#add_button')
 const dialog = document.querySelector("dialog");
-const closeButton = document.querySelector("dialog button");
+const cancelBtn = document.querySelector("#cancel-button");
 
 function Book(name, author, pages, read=false) {
     this.uid = crypto.randomUUID()
@@ -76,8 +76,8 @@ addBtn.addEventListener('click', () => {
     dialog.showModal();
 })
 
-closeButton.addEventListener("click", () => {
-  dialog.close();
+cancelBtn.addEventListener("click", () => {
+    dialog.close();
 });
 
 displayBooks()

@@ -14,8 +14,33 @@
             <span class="material-icons" id="add_button">add_2</span>
         </div>
         <dialog>
-            <button autofocus>Close</button>
-            <p>This modal dialog has a groovy backdrop!</p>
+            <div class="dia-header">
+                <h3>Add Book Form</h3>
+            </div>
+            <form id="add-form">
+                <div class="dia-content">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" />
+                    </div>
+                    <div>
+                        <label for="author">Author</label>
+                        <input type="text" id="author" name="author">
+                    </div>
+                    <div>
+                        <label for="pages">Pages</label>
+                        <input type="number" id="pages" name="pages">
+                    </div>
+                    <div>
+                        <label for="read">Read?</label>
+                        <input type="checkbox" id="read" name="read">
+                    </div>
+                    <div class="buttons">
+                        <button value="cancel" id="cancel-button" type="submit" formmethod="dialog">Cancel</button>
+                        <button id="submit-button"  type="submit" value="default">Add</button>
+                    </div>
+                </div>
+            </form>
         </dialog>
         <div class="content"></div>
         <div class="footer">&copy; 2025</div>
