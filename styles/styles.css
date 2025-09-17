@@ -1,0 +1,68 @@
+body{
+    background-color:  #e1e8f0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 3px;
+}
+label {
+    margin-left: 3px;
+}
+.container {
+    margin: 0 auto;
+    width: 600px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    gap: 15px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    border-left:#facc15 5px solid;
+    padding: 8px;
+}
+
+.header, .footer {
+    background-color: #facc15;
+    color: #1892d3;
+}
+
+.header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.material-icons {
+    width: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    align-items: end;
+}
+.material-icons:hover {
+    cursor: pointer;
+}
+
+.footer {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
