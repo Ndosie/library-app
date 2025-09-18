@@ -100,14 +100,15 @@ dialog {
     padding: 8px;
     border-radius: 8px;
     border: #1892d3 solid 1px;
+    font-size: 1em;
 }
 .dia-content input:focus {
     border-color: #facc15;
     outline: none;
 }
-.dia-content input[type='checkbox']{
-    height: 20px;
-    width: 20px;
+input[type='checkbox']{
+    height: 15px;
+    width: 15px;
 }
 .dia-content div {
     display: flex;
@@ -127,4 +128,14 @@ dialog {
     font-weight: bold;
     border-radius: 8px;
     color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.delete-button {
+    color: red;
+    float: right;
+    font-size: 32px;
 }
