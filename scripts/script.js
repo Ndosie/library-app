@@ -5,16 +5,18 @@ const dialog = document.querySelector("dialog");
 const addForm = document.querySelector('#add-form')
 const cancelBtn = document.querySelector('#cancel-button')
 
-function Book(name, author, pages, read=false) {
-    this.uid = crypto.randomUUID()
-    this.name = name
-    this.author = author
-    this.pages = pages
-    this.read = read
-}
+class Book {
+    constructor(name, author, pages, read=false) {
+        this.uid = crypto.randomUUID()
+        this.name = name
+        this.author = author
+        this.pages = pages
+        this.read = read
+    }
 
-Book.prototype.toggleReadStatus = function () {
-    this.read = this.read ? false : true
+    toggleReadStatus() {
+        this.read = this.read ? false : true
+    }
 }
 
 function addBookToLibrary(name, author, pages, read) {
